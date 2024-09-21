@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Project</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/a203f1aedd.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!-- nav bar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Project-A</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contact.html"> Contact-Us</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                 Link
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+            
+            </ul>
+            <button type="button"
+            class="btn btn-primary"
+            data-bs-target="#loginModal"
+            data-bs-toggle="modal">
+                LogIn
+            </button>
+          </div>
+        </div>
+    </nav>
+
+    <!-- Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="loginModalLabel">Login</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="col-12">
+            <div class="form-group">
+                <label for="">Email</label>
+                <input type="text" class="form-control" name="" id="">
+            </div>
+            <div class="form-group"></div>
+                <label for="">Password</label>
+                <input type="password" class="form-control" name="" id="">
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Log-In</button>
+        </div>
+      </div>
+    </div>
+    
+
+    <!-- carousel -->
+  <div id="carouselExampleCaptions" class="carousel slide carousel-fade" >
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img  src="https://images.hdqwalls.com/download/avengers-artwork-5k-ba-5120x2880.jpg" class="d-block w-100" alt="1">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>First Protection</h5>
+          <p>Some representative placeholder content for the first slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img  src="https://th.bing.com/th/id/R.612ddb67d4c7431ddf3c27e5c64f5eba?rik=38jrcLKZ6ooBPw&riu=http%3a%2f%2fhdqwalls.com%2fwallpapers%2favengers-age-of-ultron-movie.jpg&ehk=XmfLEli2vNeOJtpLE3FNNvkaG0sBflkdxZLC7lXZTd0%3d&risl=&pid=ImgRaw&r=0" class="d-block w-100" alt="2">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Second Fighters</h5>
+          <p>Some representative placeholder content for the second slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img  src="https://images.hdqwalls.com/wallpapers/avengers-movie.jpg" class="d-block w-100" alt="3">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Final War</h5>
+          <p>Some representative placeholder content for the third slide.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- project header -->
+  <section class="bg-body-secondary p-5">
+    <div class="container mt-5 ">
+        <div class="row ">
+            <div class="col-4">
+                <img src="https://logos-world.net/wp-content/uploads/2020/05/Avengers-Emblem.png" class="img-fluid" alt="logo">
+            </div>
+            <div class="col-8">
+                <h1 class="display-1"> Welcome To My Project</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae unde, aspernatur qui mollitia molestiae nemo sunt corrupti omnis aliquid at numquam molestias aut? Nam consectetur quos officiis officia ex nostrum!</p>
+            </div>
+        </div>
+    </div>
+  </section>
+
+
+  <!-- Cards -->
+  <section class="bg-body-tertiary p-4  ">
+    <div class="container mt-2 ">
+        <div class="col-12 row">
+            <h1 class="text-center"> Our Project</h1>
+            <p class="text-center">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum distinctio animi qui omnis ipsa ipsam exercitationem. Qui minima perspiciatis ratione, earum alias odio? Veniam quaerat non, nesciunt dolore harum dolor.
+
+            </p>
+        </div>
+        <div class="row ">
+
+            <div class="col-sm-6 col-md-4 col-lg-3 mt-5">
+                <div class="card" style="width: 18rem;">
+                  <div class="card-body">
+                    <h5 class="card-title position-relative">Call title
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                            45+
+                            
+                          </span>
+                    </h5>
+                    <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary form-control">Call somewhere</a>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="col-sm-6 col-md-4 col-lg-3 mt-5">
+                <div class="card" style="width: 18rem;">
+                  <div class="card-body">
+                    <h5 class="card-title position-relative">Message title
+                      
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                          99+
+                          
+                        </span>
+                      
+                    </h5>
+                    
+                    <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary form-control">Message somewhere</a>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="col-sm-6 col-md-4 col-lg-3 mt-5">
+                <div class="card" style="width: 18rem;">
+                  <div class="card-body">
+                    <h5 class="card-title ">Chat title
+                      <span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+                        
+                      </span>
+                    </h5>
+                    <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary form-control">Chat someone</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-md-4 col-lg-3 mt-5">
+                <div class="card" style="width: 18rem;">
+                  <div class="card-body">
+                    <h5 class="card-title ">Fight Combat
+                      <span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+                        
+                      </span>
+                    </h5>
+                    <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary form-control">Hit ME!!</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-md-4 col-lg-3 mt-5">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://th.bing.com/th/id/R.d061566226e0e56b0f263d7c46373352?rik=wazUWoY3%2fC1Gpw&riu=http%3a%2f%2fimages.now-tv.com%2fshares%2fvod_images%2fvi_vodproduct_desc_t%2f201406%2fen_us%2foriginal_vertical%2f201406040092349&ehk=LkDFs4NxN3yoev2OsaXFmHa0wCxVyvwEhn5KUfCVORw%3d&risl=&pid=ImgRaw&r=0" class="card-img-top" alt="1">
+                    <div class="card-body">
+                      <h5 class="card-title">AASAMBLE</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary form-control">Save The City</a>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-3 mt-5">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://th.bing.com/th/id/OIP.EA8PSwyvNqWdASzHmVBC2gHaKR?w=1511&h=2095&rs=1&pid=ImgDetMain" class="card-img-top" alt="2">
+                    <div class="card-body">
+                      <h5 class="card-title">Age Of Ultron</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary form-control">Kill The Bot</a>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-3 mt-5">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://th.bing.com/th/id/OIP.1jdklJKgjAe81COtBdjG9AHaLH?rs=1&pid=ImgDetMain" class="card-img-top" alt="3">
+                    <div class="card-body">
+                      <h5 class="card-title">Infinity War</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary form-control">Thanos Fight</a>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-3 mt-5">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://th.bing.com/th/id/OIP.O5ar9IgC_70RgrtXxkn71AAAAA?rs=1&pid=ImgDetMain" class="card-img-top" alt="4">
+                    <div class="card-body">
+                      <h5 class="card-title">End Game</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary form-control">Revenge Time</a>
+                    </div>
+                  </div>
+            </div>
+
+            
+
+        </div>
+    </div>
+  </section>
+
+
+  <!-- about me -->
+  <section class="bg-body-secondary p-5">
+
+    
+    <div class="container mt-5 ">
+        <div class="row ">
+            <div class="col-8 bg-info rounded-2">
+                <h1 class="display-1"> About - Me</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor porro dolorem fugit nesciunt, fuga numquam alias vero odio in explicabo quaerat minus repellendus nisi. Optio expedita amet minus officiis ex!
+                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae unde, aspernatur qui mollitia molestiae nemo sunt corrupti omnis aliquid at numquam molestias aut? Nam consectetur quos officiis officia ex nostrum!</p>
+            </div>
+            <div class="col-4">
+                <img src="https://freepngimg.com/thumb/deadpool/20638-5-deadpool-hd.png" class="img-fluid" alt="logo">
+                
+            </div>
+        </div>
+    </div>
+  </section>
+
+
+  <!-- feedback -->
+  <section class="bg-body-secondary  p-5">
+
+    <div class="container mt-5 bg-success-subtle rounded-2">
+        <div class="row ">
+            <div class="col-8 ">
+                <div class="mb-3 ">
+                    <label for="exampleFormControlInput1" class="form-label">Your Name</label>
+                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="XYZ">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput2" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput2" placeholder="name@example.com">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Query</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <div class="col-auto">
+                    <button type="submit" class="btn btn-primary mb-3">SUMBIT</button>
+                  </div>
+                
+            </div>
+
+            <div class="col-4">
+                <h1 class="display-1"> Give Feedback</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor porro dolorem fugit nesciunt, fuga numquam alias vero odio in explicabo quaerat minus repellendus nisi. Optio expedita amet minus officiis ex!
+                     </p>
+            </div>
+            
+        </div>
+    </div>
+  </section>
+
+  <!-- footer -->
+  <footer class="bg-dark">
+    <div class="row text-center mt-3">
+        
+
+            <ul class="list-inline">
+                <li class="list-inline-item">
+                    
+                    <a href="https://www.linkedin.com/in/camit001/" class="text-white"><i class="fa-brands fa-linkedin"></i></a>
+                </li>
+                <li class="list-inline-item">
+                    
+                    <a href="https://github.com/camit001" class="text-white"><i class="fa-brands fa-github"></i></a>
+                </li>
+                <li class="list-inline-item">
+                    
+                    <a href="#" class="text-white"><i class="fa-brands fa-discord"></i></a>
+                </li>
+            </ul>
+        
+        
+            <p class="text-white p-4 ">
+                &copy; 2024 All rights reserved | This website is made by <a href="https://www.linkedin.com/in/camit001/">AMIT KUMAR</a>
+            </p>
+        
+    </div>
+    
+
+  </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</body>
+</html>

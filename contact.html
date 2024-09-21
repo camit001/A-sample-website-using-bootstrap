@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Project</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/a203f1aedd.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!-- nav bar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Project-A</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact-Us</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Link
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+            
+            </ul>
+            <button type="button"
+            class="btn btn-primary"
+            data-bs-target="#loginModal"
+            data-bs-toggle="modal">
+                LogIn
+            </button>
+          </div>
+        </div>
+    </nav>
+
+    <!-- Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="loginModalLabel">Login</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="col-12">
+            <div class="form-group">
+                <label for="">Email</label>
+                <input type="text" class="form-control" name="" id="">
+            </div>
+            <div class="form-group"></div>
+                <label for="">Password</label>
+                <input type="password" class="form-control" name="" id="">
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Log-In</button>
+        </div>
+      </div>
+    </div>
+    
+
+    
+
+
+    <section class="bg-body-secondary">
+        <div class="row ">
+            <div class="container p-3 bg-info-subtle rounded-2 ">
+                <div class="row ">
+                    <div class="col-4 bg-info-subtle rounded-2">
+                        <h1 class="display-5"> Contact-Us</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor porro dolorem fugit nesciunt, fuga numquam alias vero odio in explicabo quaerat minus repellendus nisi. Optio expedita amet minus officiis ex!
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae unde, aspernatur qui mollitia molestiae nemo sunt corrupti omnis aliquid at numquam molestias aut? Nam consectetur quos officiis officia ex nostrum!
+                        </p>
+                        <ul class="list-unstyled">
+                            <li class="p-3">
+                                
+                                <i class="fa fa-phone">  +91 9898989898</i> 
+                            </li>
+                            <li class="p-3">
+                                <i class="fa  fa-envelope">  emailme@gmail.com</i>
+                               
+                            </li>
+                            <li class="p-3">
+                                <i class="fa fa-location-dot">  Add1 ------
+                                    Add2 -----
+                                </i>
+                                
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-8 ">
+
+                        <div class="mb-3 display-6" >
+                            OR, Make A Request For Call Back !
+                        </div>
+                        <div class="mb-3 ">
+                            <label for="exampleFormControlInput1" class="form-label">Your Name</label>
+                            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="XYZ">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput2" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput2" placeholder="name@example.com">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput3" class="form-label">Your Number</label>
+                            <input type="number" class="form-control" id="exampleFormControlInput3" placeholder="+91 98xxxxxxxx">
+                        </div>
+                        <div class="col-auto">
+                            <button type="submit" class="btn btn-primary mb-3 form-control">Request a Call</button>
+                          </div>
+                        
+                    </div>
+                </div>
+            </div>  
+    
+                
+            
+            
+               
+            
+        </div>
+        
+    
+    </section>
+
+   
+
+     <!-- footer -->
+  <footer class="bg-dark">
+    <div class="row text-center mt-3">
+        
+
+            <ul class="list-inline">
+                <li class="list-inline-item">
+                    
+                    <a href="https://www.linkedin.com/in/camit001/" class="text-white"><i class="fa-brands fa-linkedin"></i></a>
+                </li>
+                <li class="list-inline-item">
+                    
+                    <a href="https://github.com/camit001" class="text-white"><i class="fa-brands fa-github"></i></a>
+                </li>
+                <li class="list-inline-item">
+                    
+                    <a href="#" class="text-white"><i class="fa-brands fa-discord"></i></a>
+                </li>
+            </ul>
+        
+        
+            <p class="text-white p-4 ">
+                &copy; 2024 All rights reserved | This website is made by <a href="https://www.linkedin.com/in/camit001/">AMIT KUMAR</a>
+            </p>
+        
+    </div>
+    
+
+  </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</body>
+</html>
